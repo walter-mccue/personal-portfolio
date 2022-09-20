@@ -1,0 +1,16 @@
+/**
+ * Title: site.css
+ * Author: Walter McCue
+ * Date: 09/17/22
+ * Description: Content styling for my personal portfolio
+ * References: www.geeksforgeeks.com; www.w3schools.com
+*/
+
+h1 {
+    float: right;
+    color: white;
+    font-weight:700;
+    padding-top: 60px;
+    padding-right: 20px;
+    font-size: 3em;
+}
