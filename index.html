@@ -15,13 +15,15 @@
     <!--
         Stylesheets, Google Font Kit, CDN Font Kit, and JS Scripting Links
     -->
-        <link href="layout.css" type="text/css" rel="stylesheet" />
         <link href="site.css" type="text/css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <a id="top"></a>
+        <!--
+            Header Area
+        -->
         <header>
             <img src="images/profile-pic.jpg" alt="Picture of Walter McCue's face">
             <nav>
@@ -33,27 +35,41 @@
                 <a href="api.html">API Unit Tests</a><br>
                 <h1>Where Passion Meets Professionalism</h1>
             </nav>
-            
         </header>
+        <!--
+            Main Content
+        -->
         <main>
             <div class="row">
                 <article>
-                    <h2>heading</h2>
-                    <p>content</p>
+                    <h2>Hi there, I'm Walter McCue!</h2>
+                    <p>I'm Walter and I believe in creating fun and exciting web applications while still providing professionalism and excellence. I've got a wide range of skills and a passion for building things, both digitally and physically. To learn more about me, click the "About" link. To see some of my more professional developments, please see my resume or visit any of the other navigation links within this site.</p>
                 </article>
                 <article>
-                    <h2>heading</h2>
-                    <p>content</p>
+                    <h2>About this site:</h2>
+                    <p>This site is my personal portfolio. It showcases both who I am, and some of my skills. Much of the content in this portfolio will showcase my Web Development work from Bellevue University. There's much more to me than that though, so please feel free to browse around. If you would like to contact me, my information can be found at the bottom of each page.</p>
                 </article>
                 <article>
-                    <h2>heading</h2>
-                    <p>content</p>
+                    <h2>My Bucket List:</h2>
+                    <ol>
+                        <li>Build a competition-level truck</li>
+                        <li>Visit Japan</li>
+                        <li>Own a retail space</li>
+                        <li>Create fun and exciting web applications</li>
+                        <li>Create professional online websites</li>
+                        <li>Teach my skills to the next generation</li>
+                        <li>Visit Alaska</li>
+                        <li>Build my own house</li>
+                    </ol>
                 </article>
             </div>
         </main>
+        <!--
+            Footer Area
+        -->
         <footer>
             <div class="footerCol">
-                <h2>Site Navigation</h2>
+                <h2 class="center">Site Navigation</h2>
                 <div class="footerColSmall">
                     <ul class="ulNoDec">
                         <li><a href="index.html">Home</a></li>
@@ -69,21 +85,21 @@
                     </ul>
                 </div>
             </div>
-            <div class="footerCol">
+            <div class="footerCol center">
                 <a href="#top"><button>Back to Top</button></a><br>
-                <a href="mailto:walter@opticalpowerperformance.com"><button>Email: Walter@opticalpowerperformance.com</button></a><br>
-                <p>&copy 2022 Optical Power and Performance</p>
+                <a href="mailto:walter@opticalpowerperformance.com"><button>Email: Walter@opticalpowerperformance.com</button></a>
             </div>
-            <div class="footCol">
-                <h2>External Links</h2>
-                <div class="footerColSmall">
-                    <ul class="ulNoDec">
-                        <li><a href="https://github.com/walter-mccue?tab=repositories">My GitHub Repositories</a></li>
-                        <li><a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/">BU WebDev Degree</a></li>
-                        <li><a href="https://youtu.be/X-cODLicjEQ">BU Youtube</a></li>
-                        <li><a href="https://github.com/buwebdev">BU WebDev GitHub</a></li>
-                    </ul>
-                </div>
+            <div class="footerCol">
+                <h2 class="center">External Links</h2>
+                <ul class="ulNoDec leftPad">
+                    <li><a href="https://github.com/walter-mccue?tab=repositories">My GitHub Repositories</a></li>
+                    <li><a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/">BU WebDev Degree</a></li>
+                    <li><a href="https://youtu.be/X-cODLicjEQ">BU Youtube</a></li>
+                    <li><a href="https://github.com/buwebdev">BU WebDev GitHub</a></li>
+                </ul>
+            </div>
+            <div id="bottom">
+                <p>&copy 2022 Optical Power and Performance</p>
             </div>
         </footer>
     </body>
