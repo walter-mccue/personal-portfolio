@@ -53,6 +53,7 @@ a:hover {
 .footerCol {
     width: 33.3%;
     float: left;
+    margin: 0%;
 }
 .footerColSmall {
     width: 50%;
@@ -66,11 +67,12 @@ a:hover {
     list-style: none;
 }
 h1 {
-    float: right;
+    text-align: right;
     color: white;
     font-weight:700;
     padding-right: 20px;
     font-size: 3em;
+    background-color: #ca5eff;
 }
 h2 {
     font-weight: 500;
@@ -111,12 +113,14 @@ article {
     float: left;
     text-align: center;
     padding: 1.5%;
+    margin: 0%;
 }
 .double {
     width: 63.6%;
     float: left;
     padding: 1.5%;
     text-align: center;
+    margin: 0%;
 }
 .row {
     min-height: 450px;
@@ -147,29 +151,34 @@ ol {
     .footerCol, article, .double, nav {
         width: 100%;
         float: none;
+        margin:0%;
     }
 }
 @media screen and (max-width: 500px) {
     .footerCol, article, .double, nav {
         width: 100%;
         float: none;
+        margin:0%;
     }
 }
 @media screen and (max-width: 600px) {
     .footerCol, article, .double, nav {
         width: 100%;
         float: none;
+        margin:0%;
     }
 }
 @media screen and (max-width: 700px) {
     .footerCol, article, .double, nav {
         width: 100%;
         float: none;
+        margin:0%;
     }
 }
 @media screen and (max-width: 800px) {
     .footerCol, article, .double, nav {
         width: 100%;
         float: none;
+        margin:0%;
     }
 }
