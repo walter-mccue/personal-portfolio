@@ -31,7 +31,8 @@ a {
     color: #ca5eff;
 }
 nav a {
-    padding-left:40px;
+    padding-left:20px;
+    padding-right: 20px;
     text-decoration: none;
     color: white;
     font-weight: 400;
@@ -82,13 +83,14 @@ h3 {
     font-weight: 400;
     font-size: 1.75em;
 }
+h5 {
+    margin: 0%;
+    padding: 0%;
+}
 .copy {
     text-align: center;
     position:absolute;
     bottom: 5px;
-}
-.center {
-    text-align: center;
 }
 button {
     padding: 4px 20px 4px 20px;
@@ -141,6 +143,44 @@ ol {
 .card:hover {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/** Resume Styling */
+.resumeColor {
+    color: #864a04;
+}
+.resumeRow {
+    text-align: left;
+    min-height: 400px;
+}
+.resumeCol33 {
+    float: left;
+    width: 30%;
+    padding: 1.5%
+}
+.resumeCol66 {
+    float: right;
+    width: 64%;
+    padding: 1.5%;
+}
+.resumePadding {
+    padding: 15px 0px 15px 0px;
+}
+address {
+    font-size: .9em;
+}
+address a {
+    text-decoration: none;
+    color:black
+}
+address a:hover {
+    cursor: pointer;
+    color:#ca5eff;
+}
+
 /** Error */
 .error {
     color: #cc5502;
@@ -148,35 +188,35 @@ ol {
 
 /** Sets column width on different screen sizes */
 @media screen and (max-width: 400px) {
-    .footerCol, article, .double, nav {
+    .footerCol, article, .double, nav, .resumeCol33, .resumeCol66 {
         width: 100%;
         float: none;
         margin:0%;
     }
 }
 @media screen and (max-width: 500px) {
-    .footerCol, article, .double, nav {
+    .footerCol, article, .double, nav, .resumeCol33, .resumeCol66 {
         width: 100%;
         float: none;
         margin:0%;
     }
 }
 @media screen and (max-width: 600px) {
-    .footerCol, article, .double, nav {
+    .footerCol, article, .double, nav, .resumeCol33, .resumeCol66 {
         width: 100%;
         float: none;
         margin:0%;
     }
 }
 @media screen and (max-width: 700px) {
-    .footerCol, article, .double, nav {
+    .footerCol, article, .double, nav, .resumeCol33, .resumeCol66 {
         width: 100%;
         float: none;
         margin:0%;
     }
 }
 @media screen and (max-width: 800px) {
-    .footerCol, article, .double, nav {
+    .footerCol, article, .double, nav, .resumeCol33, .resumeCol66 {
         width: 100%;
         float: none;
         margin:0%;
