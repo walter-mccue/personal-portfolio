@@ -1,0 +1,217 @@
+/**
+ * Title: site.css
+ * Author: Walter McCue
+ * Date: 10/13/22
+ * Description: Content styling for my personal portfolio
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+    --primary-color: #ca5eff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color:#000;
+}
+
+a:hover {
+    border-bottom: 2px var(--primary-color) solid;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+header .container img {
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.motto {
+    justify-self: right;
+}
+
+.page-title {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 10px 10px 0px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    border-bottom: 2px #000 solid;
+    color: #000;
+    cursor: pointer;
+}
+
+header h1 h2 {
+    font-weight: 300;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 275px;
+    position: relative;
+    overflow: visible;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.center {
+    text-align: center !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    text-align: center !important;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: var(--primary-color);
+}
+
+ol {
+    text-align: left;
+}
+
+footer {
+    color:#fff;
+    background-color: var(--primary-color);
+    height: 220px;
+    overflow: visible;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav div {
+    margin: 10px 10px 0px 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    border-bottom: 2px #000 solid;
+    color: #000;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+}
+
+.nav ul {
+    padding-top: 10px;
+}
+
+.resume {
+    height: 1000px;
+}
+
+.resumeColor {
+    color: #864a04;
+}
+
+.resumeCard h3,
+.resumeCard h4,
+.resumeCard h5 {
+    padding-top: 10px;
+}
+
+.resumeCard p {
+    padding: 10px 0 !important;
+}
+
+.resumeCard ul {
+    text-align: left !important;
+}
+
+.card h3 {
+    padding-bottom: 10px;
+}
+
+.card p {
+    padding-top: 10px;
+}
+
+.card ol {
+    padding-top: 10px;
+}
+
+.card a {
+    color: var(--primary-color);
+    margin: 10px 0px;
+}
+
+.card a:hover {
+    color: #000;
+    border-bottom: 2px #000 solid;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 800px) {
+    header, footer, .resume {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .nav {
+        flex-direction: column;
+    }
+}

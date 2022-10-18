@@ -1,147 +1,174 @@
 <!--
-    Title: resume.html
+    Title: index.html
     Author: Walter McCue
-    Date: 09/17/22
-    Description: Resume Page for my Personal Portfolio
-    References: www.geeksforgeeks.com; www.w3schools.com
+    Date: 10/13/22
+    Description: Landing Page for my Personal Portfolio
  -->
- <!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
+
     <head>
+        <!-- meta tags -->
         <meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Walter McCue Portfolio</title>
-    <!--
-        Stylesheets, Google Font Kit, CDN Font Kit, and JS Scripting Links
-    -->
-        <link href="site.css" type="text/css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <title>Walter McCue Personal Portfolio</title>
+
+        <!-- styling -->
+        <link href="styles/layout.css" type="text/css" rel="stylesheet" />
+        <link href="styles/site.css" type="text/css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/275755438c.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
+
         <a id="top"></a>
-        <!--
-            Header Area
-        -->
+        
+        <!-- header -->
         <header>
-            <img src="images/profile-pic.jpg" alt="Picture of Walter McCue's face">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="resume.html">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="database.html">Database Diagrams</a>
-                <a href="api.html">API Unit Tests</a><br>
-                <h1>Where Passion Meets Professionalism</h1>
-            </nav>
-        </header>
-        <!--
-            Main Area
-        -->
-        <main>
-            <div class="longRow">
-                <article>
-                    <h2>My Personal Resume</h2>
-                    <a href="docs/walter-mccue-resume.pdf" target="blank" download><button>Download a Copy</button></a>
-                </article>
-                <article class="double">
-                    <div class="resumeRow">
-                        <div class="resumeCol33">
-                            <hr class="resumeColor">
-                            <h3 class="resumeColor">WALTER MCCUE</h3>
-                            <hr class="resumeColor">
-                            <p class="resumePadding">WALT DISNEY WORLD<br>TRANSPORTATION<br>BUS DISPATCHER</p>
-                            <hr class="resumeColor">
-                            <h4 class="resumeColor">OBJECTIVE</h4>
-                            <p class="resumePadding">To obtain a role as a full-stack developer</p>
-                        </div>
-                        <div class="resumeCol66">
-                            <h4 class="resumeColor">EXPERIENCE</h4>
-                            <h5>WALT DISNEY WORLD - ORLANDO, FL</h5>
-                            <p>2018-PRESENT<br>
-                            Bus Driver Dispatcher and part of the CleverCAD rollout team. Facilitates communication between the fleet, security, management, parks, and resorts. Monitor security cameras, bus tracking software, live events, IMs, and emails.</p>
-                            <h5>SEMINOLE COUNTY PUBLIC SCHOOLS - SANFORD, FL</h5>
-                            <p>2016-2018<br>
-                            Paraprofessional and long-term Substitute. Support role within the schools. Ensure safety of students, teaching, and providing small workshops.</p>
-                            <h5>LITTLE CAESARS PIZZA - ORLANDO, FL</h5>
-                            <p>2008-2016<br>
-                            General Manager and Restauranteur. Hire and train as needed. Control inventory, costs, and money policies. Tour state of Florida and provide QC on food, cleanliness, and culture within stores.</p>
-                        </div>
-                    </div>
-                    <div class="resumeRow">
-                        <div class="resumeCol66">
-                            <h4 class="resumeColor">EDUCATION</h4>
-                            <h5>BELLEVUE UNIVERSITY</h5>
-                            <p>BS in Web Development ---Currently Enrolled</p>
-                            <h5>SEMINOLE STATE UNIVERSITY</h5>
-                            <p>AA in Elementary Education ---2017</p>
-                            <h5>VALENCIA COLLEGE</h5>
-                            <p>AS in Computer Engineering ---2011</p>
-                            <h4 class="resumeColor">CERTIFICATIONS AND QUALIFICATIONS</h4>
-                            Microcomputer Repair/Installation Certificate. Over 10 years in leadership roles. Current role is very technological and involves using multiple software systems simultaneously and effectively communicating between many different departments. More qualifications and skills will come as I complete the WebDev degree.
-                        </div>
-                        <div class="resumeCol33">
-                            <h4 class="resumeColor">SKILLS & ABILITIES</h4>
-                            <ul>
-                                <li>HTML/CSS</li>
-                                <li>JavaScript</li>
-                                <li>Microsoft Office Suite</li>
-                                <li>Prioritize Administrative Tasks</li>
-                                <li>Monitoring Security and Tracking Software</li>
-                                <li>Training/Leading/Supporting</li>
-                                <li>Facilitating Communication to the fleet</li>
-                                <li>Research faults and complaints</li>
-                            </ul>
-                            <h4 class="resumeColor">CONTACT INFORMATION</h4>
-                            <address>
-                                620 Terrace Cove Way<br>
-                                Orlando, FL 32828<br>
-                                <strong>T: </strong>407-722-1849<br>
-                                <strong>E: </strong><a href="mailto:walter@opticalpowerperformance.com" id="resumeLink">Walter@OpticalPowerPerformance.com</a>
-                            </address>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </main>
-        <!--
-            Footer Area
-        -->
-        <footer>
-            <div class="footerCol">
-                <h2 class="center">Site Navigation</h2>
-                <div class="footerColSmall">
-                    <ul class="ulNoDec">
+
+            <div class="container grid">
+
+                <img src="images/profile-pic.jpg" alt="Walter's profile picture" />
+
+                <nav class="flex">
+                    <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                    </ul>
-                </div>
-                <div class="footerColSmall">
-                    <ul class="ulNoDec">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="resume.html">My Resume</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="database.html">Database Diagrams</a></li>
                         <li><a href="api.html">API Unit Tests</a></li>
                     </ul>
+                </nav>
+
+                <h1><b>My Resume</b></h1>
+
+                <h2 class="motto"><b>Where Passion Meets Professionalism</b></h2>
+
+            </div>
+
+        </header>
+        
+        <!-- main content -->
+        <section class="resume">
+
+            <div class="container grid">
+
+                <div class="card small">
+                    <a href="docs/walter-mccue-resume.pdf" target="blank" download><i class="fa-solid fa-file-pdf"></i> Download a Copy</a>
                 </div>
+
+                <div class="card resumeCard">
+                    <div class="resumeTitle">
+                        <hr class="resumeColor">
+                        <h3 class="resumeColor">WALTER MCCUE</h3>
+                        <hr class="resumeColor">
+                        <p>WALT DISNEY WORLD<br>TRANSPORTATION<br>BUS DISPATCHER</p>
+                        <hr class="resumeColor">
+                        <h4 class="resumeColor">OBJECTIVE</h4>
+                        <p>To obtain a role as a full-stack developer</p>
+                    </div>
+                    <div class="resumeEmployment">
+                        <h4 class="resumeColor">EXPERIENCE</h4>
+                        <h5>WALT DISNEY WORLD - ORLANDO, FL</h5>
+                        <p>2018-PRESENT<br>
+                        Bus Driver Dispatcher and part of the CleverCAD rollout team. Facilitates communication between the fleet, security, management, parks, and resorts. Monitor security cameras, bus tracking software, live events, IMs, and emails.</p>
+                        <h5>SEMINOLE COUNTY PUBLIC SCHOOLS - SANFORD, FL</h5>
+                        <p>2016-2018<br>
+                        Paraprofessional and long-term Substitute. Support role within the schools. Ensure safety of students, teaching, and providing small workshops.</p>
+                        <h5>LITTLE CAESARS PIZZA - ORLANDO, FL</h5>
+                        <p>2008-2016<br>
+                        General Manager and Restauranteur. Hire and train as needed. Control inventory, costs, and money policies. Tour state of Florida and provide QC on food, cleanliness, and culture within stores.</p>
+                    </div>
+                    <div class="resumeSkills">
+                        <h4 class="resumeColor">SKILLS & ABILITIES</h4>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>Microsoft Office Suite</li>
+                            <li>Prioritize Administrative Tasks</li>
+                            <li>Monitoring Security and Tracking Software</li>
+                            <li>Training/Leading/Supporting</li>
+                            <li>Facilitating Communication to the fleet</li>
+                            <li>Research faults and complaints</li>
+                        </ul>
+                        <h4 class="resumeColor">CONTACT INFORMATION</h4>
+                        <address>
+                            620 Terrace Cove Way<br>
+                            Orlando, FL 32828<br>
+                            <strong>T: </strong>407-722-1849<br>
+                            <strong>E: </strong><a href="mailto:walter@opticalpowerperformance.com" id="resumeLink">Walter@OpticalPowerPerformance.com</a>
+                        </address>
+                    </div>
+                    <div class="resumeEducation">
+                        <h4 class="resumeColor">EDUCATION</h4>
+                        <h5>BELLEVUE UNIVERSITY</h5>
+                        <p>BS in Web Development ---Currently Enrolled</p>
+                        <h5>SEMINOLE STATE UNIVERSITY</h5>
+                        <p>AA in Elementary Education ---2017</p>
+                        <h5>VALENCIA COLLEGE</h5>
+                        <p>AS in Computer Engineering ---2011</p>
+                        <h4 class="resumeColor">CERTIFICATIONS AND QUALIFICATIONS</h4>
+                        Microcomputer Repair/Installation Certificate. Over 10 years in leadership roles. Current role is very technological and involves using multiple software systems simultaneously and effectively communicating between many different departments. More qualifications and skills will come as I complete the WebDev degree.
+                    </div>
+                </div>
+
             </div>
-            <div class="footerCol center">
-                <a href="#top"><button>Back to Top</button></a><br>
-                <a href="mailto:walter@opticalpowerperformance.com"><button>Email: Walter@opticalpowerperformance.com</button></a>
+            
+        </section>
+
+        
+        <div class="center"><a href="#top"><i class="fa-solid fa-arrow-up"></i> Back to Top</a></div>
+        
+        <!-- footer -->
+        <footer>
+            
+            <div class="container grid">
+
+                <div class="footer">
+                    <h2>Site Navigation</h2>
+                    <div class="nav">
+                        <div>
+                            <a href="index.html">Home</a><br>
+                            <a href="about.html">About Me</a><br>
+                            <a href="resume.html">My Resume</a><br>
+                            <br>
+                        </div>
+                        <div>
+                            <a href="projects.html">Projects</a><br>
+                            <a href="database.html">Database Diagrams</a><br>
+                            <a href="api.html">API Unit Tests</a><br>
+                            <br>
+                        </div>
+                    </div class="nav">
+                </div>
+
+                <div class="footer">
+                    <div><h2>External Links</h2></div>
+                    <div class="nav">
+                        <div>
+                            <a href="mailto:walter@opticalpowerperformance.com"><i class="fa-solid fa-envelope"></i>  Walter@opticalpowerperformance.com</a><br>
+                            <a href="https://opticalpowerperformance.com/" target="blank"><i class="fa-solid fa-car-side"></i> www.OpticalPowerPerformance.com</a><br>
+                            <a href="https://www.facebook.com/OpticalPowerPerformance" target="blank"><i class="fa-brands fa-facebook"></i> Visit my Facebook Page</a><br>
+                        </div>
+                        <div>
+                            <a href="https://github.com/walter-mccue?tab=repositories" target="blank"><i class="fa-brands fa-github"></i> My GitHub Repositories</a><br>
+                            <a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="blank"><i class="fa-solid fa-building-columns"></i> BU WebDev Degree</a><br>
+                            <a href="https://youtu.be/X-cODLicjEQ" target="blank"><i class="fa-brands fa-youtube"></i> BU Youtube</a><br>
+                            <a href="https://github.com/buwebdev" target="blank"><i class="fa-brands fa-github"></i> BU WebDev GitHub</a><br>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="footerCol">
-                <h2 class="center">External Links</h2>
-                <ul class="ulNoDec leftPad">
-                    <li><a href="https://github.com/walter-mccue?tab=repositories" target="blank">My GitHub Repositories</a></li>
-                    <li><a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="blank">BU WebDev Degree</a></li>
-                    <li><a href="https://youtu.be/X-cODLicjEQ" target="blank">BU Youtube</a></li>
-                    <li><a href="https://github.com/buwebdev" target="blank">BU WebDev GitHub</a></li>
-                </ul>
-            </div>
-            <div id="bottom">
-                <p>&copy 2022 Optical Power and Performance</p>
-            </div>
+
+            <div class="bottom"><p>&copy; 2022 Optical Power and Performance</p></div>
+
         </footer>
+
     </body>
+
 </html>
