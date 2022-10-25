@@ -169,6 +169,10 @@ footer .grid {
     transform: translateY(-10px);
 }
 
+.card img {
+    width: 99%;
+}
+
 @keyframes slideInFromRight {
     0% {
         transform: translateX(100%);
