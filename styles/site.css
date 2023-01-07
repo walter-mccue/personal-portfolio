@@ -205,7 +205,7 @@ h2 {
 /* Tablet */
 
 @media screen and (max-width: 800px) {
-    header, footer, .resume {
+    header, footer, .resume, .tech {
         height: auto;
     }
 }
