@@ -1,0 +1,407 @@
+/**
+ * Title: site.css
+ * Author: Walter McCue
+ * Date: 10/13/22
+ * Description: Content styling for my personal portfolio
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+    --primary-color: #5B9BD5;
+    --devops-color: #5B9BD5;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color:#000;
+}
+
+a:hover {
+    border-bottom: 2px var(--primary-color) solid;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+header .container img {
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.motto {
+    justify-self: right;
+}
+
+.page-title {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 10px 10px 0px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    border-bottom: 2px #000 solid;
+    color: #000;
+    cursor: pointer;
+}
+
+header h1 h2 {
+    font-weight: 300;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 125px;
+    position: relative;
+    overflow: visible;
+}
+
+header nav {
+    justify-self:right !important;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--devops-color);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.center {
+    text-align: center !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    text-align: center !important;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: var(--primary-color);
+}
+
+ol {
+    text-align: left;
+}
+
+footer {
+    color:#fff;
+    background-color: var(--primary-color);
+    height: 220px;
+    overflow: visible;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav div {
+    margin: 10px 10px 0px 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    border-bottom: 2px #000 solid;
+    color: #000;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+}
+
+.nav ul {
+    padding-top: 10px;
+}
+
+.card h3 {
+    padding-bottom: 10px;
+}
+
+.card p {
+    padding-top: 10px;
+}
+
+.card ol {
+    padding-top: 10px;
+}
+
+.card a {
+    color: var(--primary-color);
+    margin: 10px 0px;
+}
+
+.card a:hover {
+    color: #000;
+    border-bottom: 2px #000 solid;
+}
+
+.container {
+    overflow: visible;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+section {
+    overflow: visible;
+    height: 500px;
+    margin: 20px 0px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tech::before, .tech::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    top: 350px;
+    right: 0;
+    left: 0;
+    background-color: var(--devops-color);
+    z-index: -1;
+    transform: skewY(-22deg);
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+}
+
+header .grid {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    height: 100%;
+    z-index: 1;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    overflow: visible;
+}
+
+.section .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+}
+
+.tech {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    z-index: 1;
+}
+
+.footer {
+    width:fit-content;
+    margin-bottom: 0%;
+    justify-self: center;
+}
+
+.section {
+    overflow: visible;
+    height: 400px;
+    margin: 20px 0px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 95%;
+    background-color: #fff;
+    transition: transform 0.2s ease-in;
+    animation: slideInFromBottom 1s ease-in;
+}
+
+.videoCard {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#videoContainer {
+    justify-self: center;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    min-height: 600px;
+    min-width: 900px;
+}
+
+.select {
+    justify-self: center;
+    width: 600px;
+}
+
+label {
+    font-weight: 700;
+}
+
+.drop-down-menu {
+    justify-self: center;
+    width: 40%;
+    border: 2px solid var(--devops-color);
+    border-radius: 4px;
+    padding: 5px 2px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+option {
+    font-weight: 700;
+    background: var(--primary-color);
+}
+
+
+.drop-down-menu:hover {
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 99%;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 800px) {
+    header, footer, .resume, .tech {
+        height: auto;
+    }
+    .grid, header .grid, footer .grid, .section .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    section, .section, .card {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .nav {
+        flex-direction: column;
+    }
+    nav ul {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .card {
+        animation: slideInFromRight 1s ease-in;
+    }
+}

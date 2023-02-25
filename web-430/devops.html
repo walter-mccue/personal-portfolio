@@ -14,15 +14,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Walter McCue Tech Value Stream</title>
+        <title>Walter McCue DevOps</title>
 
         <!-- styling -->
         <link href="../styles/layout.css" type="text/css" rel="stylesheet" />
-        <link href="../styles/site.css" type="text/css" rel="stylesheet" />
+        <link href="devops.css" type="text/css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/275755438c.js" crossorigin="anonymous"></script>
+        <script src="devops.js"></script>
     </head>
 
-    <body>
+    <body onload="noDisplay()">
 
         <a id="top"></a>
         
@@ -31,12 +32,12 @@
 
             <div class="container grid flex">
 
-                <img src="../images/profile-pic.jpg" alt="Walter's profile picture" />
+                <div></div>
 
-                <nav class="flex">
-                    <ul>
-                        <li><a href="../index.html">Go Back to Walter's Portfolio</a></li>
-                    </ul>
+                <nav>
+                    
+                    <a href="../index.html">Go Back to Walter's Portfolio</a>
+                    
                 </nav>
 
                 <h1><b>DevOps Presentations</b></h1>
@@ -53,141 +54,147 @@
 
             <section class="tech">
 
-                <div class="container grid">
+                <div class="container grid flex">
 
                     <!--Selection-->
 
-                    <div class="card small">
-                        <label for="presentation">Chose a presentation:</label>
-                        <select id="presentation" class="drop-down-menu" name="presentation">
+                    <div class="card select">
+                        <label for="presentation">Choose a presentation:</label>
+                        <br>
+                        <select id="presentation" class="drop-down-menu" name="presentation"onChange="presentationSelect()">
                             <option value="select">--Select--</option>
                             <option value="week-1">Tech Value Stream</option>
                             <option value="week-2">Two Pizza Rule</option>
                             <option value="week-3">Testing</option>
                             <option value="week-4">Continuous Integration</option>
                             <option value="week-5">Pager Rotation Duties</option>
-                            <option value="week-6">Coming Soon</option>
-                            <option value="week-7">Coming Soon</option>
-                            <option value="week-8">Coming Soon</option>
+                            <option value="week-6">Change Approval</option>
+                            <option value="week-7">Tech VS Business</option>
+                            <option value="week-8">Security Controls</option>
                             <option value="week-9">Coming Soon</option>
                         </select>
+
                     </div>
 
-                    <!--Week 1-->
+                    <div class="card videoCard" id="videoContainer">
 
-                    <div class="card videoCard" id="week-1">
-                        <div class="card-title">
-                            <h2>The Tech Value Stream Presentation</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation1.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 1-->
 
-                    <!--Week 2-->
+                        <div id="week-1">
+                            <div class="card-title">
+                                <h2>The Tech Value Stream Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls reload="none" id="video-1" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation1.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-2">
-                        <div class="card-title">
-                            <h2>The Two-Pizza Team Presentation</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation2.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 2-->
 
-                    <!--Week 3-->
+                        <div id="week-2">
+                            <div class="card-title">
+                                <h2>The Two-Pizza Team Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-2" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation2.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-3">
-                        <div class="card-title">
-                            <h2>The Testing Presentation</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation3.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 3-->
 
-                    <!--Week 4-->
+                        <div id="week-3">
+                            <div class="card-title">
+                                <h2>The Testing Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-3" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation3.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-4">
-                        <div class="card-title">
-                            <h2>The Continuous Integration Presentation</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation4.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 4-->
 
-                    <!--Week 5-->
+                        <div id="week-4">
+                            <div class="card-title">
+                                <h2>The Continuous Integration Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-4" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation4.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-5">
-                        <div class="card-title">
-                            <h2>The Pager Rotation Duties Presentation</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation5.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 5-->
 
-                    <!--Week 6-->
+                        <div id="week-5">
+                            <div class="card-title">
+                                <h2>The Pager Rotation Duties Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-5" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation5.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-6">
-                        <div class="card-title">
-                            <h2>Coming Soon</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation6.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 6-->
 
-                    <!--Week 7-->
+                        <div id="week-6">
+                            <div class="card-title">
+                                <h2>The Change Approval Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-6" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation6.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-7">
-                        <div class="card-title">
-                            <h2>Coming Soon</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation7.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 7-->
 
-                    <!--Week 8-->
+                        <div id="week-7">
+                            <div class="card-title">
+                                <h2>The Tech VS Business Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-7" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation7.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-8">
-                        <div class="card-title">
-                            <h2>Coming Soon</h2>
-                        </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation8.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                        <!--Week 8-->
 
-                    <!--Week 9-->
+                        <div id="week-8">
+                            <div class="card-title">
+                                <h2>The Security Controls Presentation</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-8" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation8.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
 
-                    <div class="card videoCard" id="week-9">
-                        <div class="card-title">
-                            <h2>Coming Soon</h2>
+                        <!--Week 9-->
+
+                        <div id="week-9">
+                            <div class="card-title">
+                                <h2>Coming Soon</h2>
+                            </div>
+                            <div class="card-content">
+                                <video controls id="video-9" reload="none" style="width:1000px;">
+                                    <source src="../devops-presentations/mccue-presentation9.2.mp4" type="video/mp4" />
+                                </video>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <video controls autoplay reload="none" style="width:1000px;">
-                                <source src="../devops-presentations/mccue-presentation9.2.mp4" type="video/mp4" />
-                            </video>
-                        </div>
+
                     </div>
 
                 </div>

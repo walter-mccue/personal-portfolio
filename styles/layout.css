@@ -1,5 +1,5 @@
 /**
- * Title: site.css
+ * Title: layout.css
  * Author: Walter McCue
  * Date: 10/13/22
  * Description: Layout styling for my personal portfolio
@@ -61,7 +61,7 @@ section::before, section::after {
     top: 275px;
     right: 0;
     left: 0;
-    background-color: var(--primary-color);
+    background-color: var(--devops-color);
     z-index: -1;
     transform: skewY(-20deg);
     width: 100%;
